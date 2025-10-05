@@ -1,0 +1,27 @@
+{
+  "name": "practicing-expressjs",
+  "version": "1.0.0",
+  "description": "Learning express JS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roshhi/practicing-expressJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/roshhi/practicing-expressJS/issues"
+  },
+  "homepage": "https://github.com/roshhi/practicing-expressJS#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
