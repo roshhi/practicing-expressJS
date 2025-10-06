@@ -27,7 +27,8 @@ router.post('/', (req,res)=> {
       gender: req.body.gender,
       physics: req.body.physics,
       maths: req.body.maths,
-      english: req.body.english
+      english: req.body.english,
+      email: req.body.email
     }
     students.push(newMember);
     res.json({students})

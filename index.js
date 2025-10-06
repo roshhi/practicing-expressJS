@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 const { engine } = require('express-handlebars');
 const port = process.env.PORT || 1000;
+const students = require('./student-data.json');
 
 // Handlebars middleware
 app.engine('handlebars', engine());
@@ -13,7 +14,10 @@ app.set('views', './views');
 app.use(express.json());
 app.use(express.urlencoded({extended:false}))
 
-app.get('/',(req,res)=> res.render('index'));
+app.get('/',(req,res)=> res.render('index',{
+    title: "Member App",
+    students
+}));
 
 // Members api routes
 app.use('/api/members',require('./routes/api/members'));
